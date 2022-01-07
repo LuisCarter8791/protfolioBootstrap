@@ -1,88 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+        <head>
+                <link rel="stylesheet" href="src/styles.css" />
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+                <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
+                <title>Luis Carter's Portfolio</title>
+                <meta charset="UTF-8" />
+              </head>
+              <body>
+                  <section class="hero">
+                      <nav>
+                          <img class="logo" src="" alt="Luis Carter's logo"/>
+                          <ul id="nav-list">
+                              <li><a href="#about-me">About me</a></li>
+                              <li><a href="#projects">Projects</a></li>
+                              <li><a href="#contact-me">Contact</a></li>
+                          </ul>
+                          <button class="hamburger" id="hamburger">
+                              <!-- <i class="fas fa-bars"></i>
+                              <i class="fas fa-bars"></i>
+                              <i class="fas fa-bars"></i> -->
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="24" height="24" viewBox="0 0 24 24"><path d="M24 6h-24v-4h24v4zm0 4h-24v4h24v-4zm0 8h-24v4h24v-4z"/></svg>
+                          </button>
+                      </nav>
+                      <div class="hero-area">
+                        <div class="hero-text">
+                            <h1>Luis Carter</h1>
+                            <p>Full Stack Developer</p>
+                            <div class="button"><a href="#about-me">About me</a></div>
+                        </div>
+                        <div class="socials">
+                            <div><a href="https://www.facebook.com/greatdanegraphicdesign" class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/></svg>
+                            </a></div>
+                            <div><a href="https://www.instagram.com/great_dane_graphic_design"  class="social">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                            </a></div>
+                            
+                        </div>
+                      </div>
+                  </section>
+                  <section class="sub-section" id="about-me">
+                      <div class="information">
+                          <h2>About Me</h2>
+                          <p>Hello. My name is Luis Carter. I am a Software Developer and YouTuber with a passion for teaching.</p>
+                      </div>
+                      <div class="headshot-container">
+                          <img class="headshot" src="src/imgs/profilePic.jpeg" alt="Luis Carter headshot"/>
+                      </div>
+                  </section>
+                  <section class="sub-section-alternative" id="projects">
+                      <h2>Projects</h2>
+                      <div class="project-container">
+                          <div class="project-card">
+                              <img class="project-image" src="src/imgs/Baby_Wolverine.png" alt="Project One Image"/>
+                              <h3>Project One</h3>
+                              <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                              <hr/>
+                              <p class="subtext"><a class="project-link" target="_blank" href="src/imgs/Baby_Wolverine.png">Large View</a></p>
+                          </div>
+                          <div class="project-card">
+                            <img class="project-image" src="src/imgs/FiteSoxBlue.png" alt="Project One Image"/>
+                            <h3>Project Two</h3>
+                            <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                            <hr/>
+                            <p class="subtext"><a class="project-link" target="_blank" href="src/imgs/FiteSoxBlue.png">Large View</a></p>
+                          </div>
+                          <div class="project-card">
+                            <img class="project-image" src="src/imgs/KeiKeiRestaurant.png" alt="Project One Image"/>
+                            <h3>Project Three</h3>
+                            <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                            <hr/>
+                            <p class="subtext"><a class="project-link" target="_blank" href="src/imgs/KeiKeiRestaurant.png">Large View</a></p>
+                          </div>
+                          <div class="project-card">
+                            <img class="project-image" src="src/imgs/Platypus.jpg" alt="Project One Image"/>
+                            <h3>Project Four</h3>
+                            <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p>
+                            <hr/>
+                            <p class="subtext"><a class="project-link" target="_blank" href="src/imgs/Platypus.jpg">Large View</a></p>
+                          </div>
+                      </div>
+                  </section>
+                  <footer id="contact-me">
+                      <h2>Contact me</h2>
+                      <p>luiscarter11078@gmail.com</p>
 
-    <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- ----------------------- -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-        <!-- NAV -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#"><h1></h1></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                    </li>
-                  </ul>
-                  
-                </div>
-        </nav>
-
-        <!-- SECTION 1 -->
-        <section class="">
-            <div class="left-side">
-                <h1>Luis Carter, Jr</h1>
-                <h3>Graphic Designer</h3>
-
-                <button>About Me</button>
-            </div>
-
-            <div class="right-side">
-                <a href="">FB</a>
-                <a href="">IG</a>
-            </div>
-        </section>
-
-        <!-- SECTION 2 -->
-        <section class="About-me">
-            <div class="left-about">
-                <h1>About Me</h1>
-                <p>Hello my name is Luis Carter and I'm a Graphic Designer.   Thank you for visiting my page.   Let me assist with you with any and all of your design needs.   I specialize in logo and character design.</p>
-            </div>
-
-            <div class="right-about">
-                <img src="" alt="">A pic of my face
-            </div>
-        </section>
-
-        <!-- SECTION 3 -->
-        <section class="Projects">
-            <div>
-                <h1>Projects</h1>
-            </div>
-
-            <div class="project-img">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
-
-        </section>
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
-</html>
+                      <footer id="contact">
+                            <div class="form-container">
+                                <div class="form-container-container">
+                                    <form action="https://formsubmit.co/387d5c1d261abb1d3cfcb8349dd6767a" method="POST">
+                                        <div class="form-group">
+                                            <label for="firstName"> First Name</label>
+                                            <input type="text" id="firstName" name="firstName" required="">
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label for="lastName"> Last Name</label>
+                                            <input type="text" id="lastName" name="lastName" required="">
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" id="email" name="email" required="">
+                                        </div>
+                                
+                                        <div class="form-group">
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                        </div>
+                                
+                                        <button class="button" type="submit">Submit</button>
+                                                    
+                                    </form>
+                                </div>
+                            </div>
+                        </footer>
+                  </footer>
+                <script src="src/app.js"></script>
+              </body>
+            </html>
